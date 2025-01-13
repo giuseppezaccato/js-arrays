@@ -14,19 +14,24 @@ const fourthTeacher = teachers[3];
 console.log(fourthTeacher);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-teachers[4] = "Patrick"
-teachers.splice(4, 1, "Patrcik");
+teachers[4] = "Patrick";
+teachers.splice(4, 1, "Patrick");
+// ? sia la selezione **teachers[4]** che **teachers.splice(4,1, "Patrick")**
+// ? hanno lo stesso effetto pratico nella sostituzione del quinto insegnante " in Patrick"
+// ? perchè? 
 console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop();
 console.log(teachers);
-console.log(lastTeacher); // *stampa solo l'ultimo insegnate, che pero ho estratto!
+console.log(lastTeacher);
+// *stampa solo ultimo insegnate, che pero ho estratto!
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers.shift;
+const firstTeacher = teachers.shift();
 console.log(teachers);
-console.log(firstTeacher); // * stampa solo il primo insegnate, che pero abbiamo tolto!
+console.log(firstTeacher);
+// * stampa solo primo insegnate, che pero ho estratto!
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 teachers.push("Vanessa");
@@ -43,6 +48,7 @@ console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = teachers.lenght !== 0;
+const isTeachersEmpty = teachers.lenght !== 0; // ! al massimo due uguali (quindi !==)
+//  * equivale a dargli una sequenza di IF ed ELSE sfruttando il NOT
 console.log(isTeachersEmpty);
 
