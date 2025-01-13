@@ -33,6 +33,9 @@ console.log(longNamesB);
 
 // 3. Rimuovi 'Ed' dall'array teachers
 teachers.splice(-2, 1);
+// ! metodo delete() sconsigliato perchè causa buchi "undefined"
+// ! è sempre consigliato usare pop() o shift() al suo posto! 
+// delete teachers[5];
 console.log(teachers);
 
 
@@ -42,5 +45,7 @@ const isFabioPresent = teachers.includes("Fabio");
 console.log(isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = teachers.join(" - ");
+const teachersString = teachers.join(" - "); //* join(separator) è una sorta di "evoluzione" del .toString()
+const teachersStringI = teachers.toString();
 console.log(teachersString);
+console.log(teachersStringI)
