@@ -14,7 +14,7 @@ const fourthTeacher = teachers[3];
 console.log(fourthTeacher);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-teachers[4] = "Patrick";
+// teachers[4] = "Patrick";
 teachers.splice(4, 1, "Patrick");
 // ? sia la selezione **teachers[4]** che **teachers.splice(4,1, "Patrick")**
 // ? hanno lo stesso effetto pratico nella sostituzione del quinto insegnante " in Patrick"
@@ -48,7 +48,7 @@ console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = teachers.lenght !== 0; // ! al massimo due uguali (quindi !==)
+const isTeachersEmpty = teachers.length !== 0; // ! al massimo due uguali (quindi !==)
 //  * equivale a dargli una sequenza di IF ed ELSE sfruttando il NOT
 console.log(isTeachersEmpty);
 
