@@ -46,6 +46,16 @@ console.log(teachers);
 const isFabioPresent = teachers.includes("Fabio");
 console.log(isFabioPresent);
 
+//*4.1 Verifica con ciclo For senza l'uso di .includes
+let isFabioPresent1 = false;
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] === 'Fabio') {
+    isFabioPresent1 = true;
+    break; // Usciamo dal ciclo non appena troviamo Fabio
+  }
+}
+console.log(`Fabio è presente? => ${isFabioPresent}`);
+
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.join(" - "); //* join(separator) è una sorta di "evoluzione" del .toString()
 const teachersStringI = teachers.toString();
