@@ -49,6 +49,10 @@ console.log(lewisIndex);
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = teachers.length !== 0; // ! al massimo due uguali (quindi !==)
-//  * equivale a dargli una sequenza di IF ed ELSE sfruttando il NOT
+// ? per avere un discorso logicamente piu giusto, avremmo dovuto dargli un'UGUAGLIANZA e non una DISUGUAGLIANZA!
+// ? o al massimo mettere un'altra negazione anche nella dichiarazione della  
+// ? "const isNotTeachersEmpty = teachers.length !==0"
+// ? quindi const isTeachersEmpty = teachers.length === 0; (così)
+//  * equivale a dargli una sequenza di IF ed ELSE sfruttando il !NOT
 console.log(isTeachersEmpty);
 

@@ -27,6 +27,8 @@ for (let i = 0; i < teachers.length; i++) {
 console.log(longNamesA);
 
 // ! 2.2 FILTER() method con arrow function
+//* Il metodo filter() è spesso considerato più elegante e funzionale rispetto all'approccio con il ciclo for.
+//* Entrambi i metodi rispettano il requisito di non modificare l'array originale teachers.
 const longNamesB = teachers.filter(teacher => teacher.length >= 5);
 console.log(longNamesB);
 
@@ -34,7 +36,7 @@ console.log(longNamesB);
 // 3. Rimuovi 'Ed' dall'array teachers
 teachers.splice(-2, 1);
 // ! metodo delete() sconsigliato perchè causa buchi "undefined"
-// ! è sempre consigliato usare pop() o shift() al suo posto! 
+// ! è sempre meglio usare pop() o shift() al suo posto! 
 // delete teachers[5];
 console.log(teachers);
 
